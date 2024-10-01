@@ -1,0 +1,43 @@
+.tinderCards {
+    margin-bottom: 30px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .tinderCards__cardContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    height: calc(100vh - 200px);
+    position: relative;
+  }
+  
+  .swipe {
+    position: absolute;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease; /* Faster swipe effect */
+  }
+  
+  .card {
+    background-color: #fff;
+    width: 600px;
+    padding: 20px;
+    max-width: 85vw;
+    height: 50vh;
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.36);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .card h3 {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    color: #fff;
+  }
+  
+  /* Disable scrolling on overflow in x direction */
+  body {
+    overflow-x: hidden;
+  }
+  
